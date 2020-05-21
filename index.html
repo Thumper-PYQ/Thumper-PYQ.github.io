@@ -1,3 +1,78 @@
 # Thumper-PYQ.github.io
 个人博客
-<div align="center" style="color:red,font-size=20px,font-family="楷体"">个人博客<div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网页</title>
+    <style>
+        .red {
+            color: seagreen;
+            font-size: 20px;
+            font-family: "楷体";
+            font-weight: 700;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="5" width="100%" cellpadding="40%" cellspacing="0">
+        <!-- table标签中还有:rules属性 用法rules="none/rows/cols/all". frame属性 用法frame="above/below". bgcolor属性 用法 bgcolor="#   " -->
+        <caption>这是一个信息表格</caption>
+        <!-- 表格标题标签 -->
+        <!--    <colgroup>   這个标签是给以列为单位的表格元素设置背景颜色
+            <col span="1" style="background-color: crimson;">
+            <col span="1" style="background-color:green;">
+            <col span="1" style="background-color:blue;">
+        </colgroup> -->
+        <tr>
+            <th align=center style="font-size:20px">姓名</th>
+            <!--  表格中的表头 -->
+            <th align=center>年龄</th>
+            <th align=center>性别</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>18</td>
+            <td rowspan="2">男</td>
+            <!-- 合并单元格三部曲：1、确定行列合并。2、找到目标单元格。3、删除多余单元格 -->
+        </tr>
+        <tr>
+            <td>小芳</td>
+            <td>19</td>
+            <!-- <td>女</td> 由于合并单元格而被删除的单元格-->
+        </tr>
+    </table>
+    <p Class="red">我想练习CSS</p>
+    <p>
+        <div align="center" style="color:tan fnot-size=20px">这是一个div标签</div>
+        <!-- 利用div看看实际效果（div实现独立的一行，而且可以在标签内部） -->
+        <div align='right'>这里用div会重新启用一行
+            <span style="color:blue;font:italic;font-weight: 700">
+            我就想看看这个是怎么回事
+           可能是这么回事吗？
+        </span>
+        </div>
+        <!-- 快捷键：标签名*数字 -->
+        <p></p>
+        <p></p>
+        <ul>
+            <!-- 快捷键ul>li -->
+            <li></li>
+        </ul>
+        <dl>
+            <!-- 快捷键dl>dt+dd -->
+            <dt></dt>
+            <dd></dd>
+        </dl>
+        <!-- 快捷键.demo$*3 -->
+        <div class="demo1"></div>
+        <div class="demo2"></div>
+        <div class="demo3"></div>
+        <!--快捷键#demo  -->
+        <div id="demo"></div>
+    </p>
+
+
+
+</body>
